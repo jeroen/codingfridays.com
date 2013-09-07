@@ -1,0 +1,17 @@
+{
+  "name": "evento",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "assemble-less": "",
+    "grunt-css": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-connect": "",
+    "grunt-contrib-imagemin": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": "",
+    "grunt-preprocess": ""
+  }
+}
