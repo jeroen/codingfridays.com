@@ -1,0 +1,26 @@
+// Retina images
+//
+// Short retina mixin for setting background-image and -size
+
+.img-retina {
+	.normal {
+		display: auto;
+	}
+	.retina {
+		display: none;
+	}
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+		.normal {
+			display: none;
+		}
+		.retina {
+			display: inline-block;
+		}
+	}
+}

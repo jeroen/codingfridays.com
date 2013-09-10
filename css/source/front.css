@@ -11,6 +11,20 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+.img-retina .normal {
+  display: auto;
+}
+.img-retina .retina {
+  display: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .img-retina .normal {
+    display: none;
+  }
+  .img-retina .retina {
+    display: inline-block;
+  }
+}
 h1,
 h2,
 h3,
@@ -26,9 +40,11 @@ h6,
   line-height: 1.3em;
 }
 #header {
-  background: #222222;
+  background: #222222 url('../img/header_bg.png');
+  background-size: cover;
+  border-top: 3px solid #43daff;
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 #header ul {
   list-style: none;
@@ -41,18 +57,56 @@ h6,
   margin: 0 10px;
 }
 #header h1 {
-  font-size: 48px;
-  color: #f3f3f3;
-  font-weight: normal;
+  display: none;
 }
 #header h2 {
-  font-size: 24px;
+  font-size: 18px;
   color: #666666;
   font-weight: normal;
+}
+#header .izquierda,
+#header .derecha {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #888888;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-top: 30px;
+}
+#header .izquierda {
+  padding-left: 20px;
+}
+#header .derecha {
+  padding-left: 20px;
+}
+@media (min-width: 1200px) {
+  #header .izquierda {
+    margin-top: 40px;
+    margin-right: -50px;
+  }
+  #header .derecha {
+    margin-top: 40px;
+    margin-left: -50px;
+  }
+}
+@media (min-width: 992px) {
+  #header {
+    padding: 80px 0;
+  }
+}
+#logo img {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
 }
 #ponentes {
   padding: 50px 0;
   background: #f3f3f3;
+  border-bottom: 1px solid #ededed;
 }
 #ponentes .ponente {
   padding-left: 180px;
@@ -80,4 +134,32 @@ h6,
 #lugar {
   padding: 50px 0;
   background: #f3f3f3;
+  border-top: 1px solid #ededed;
 }
+#participar {
+  background: #444444;
+  color: #ededed;
+  padding: 40px 0;
+}
+#footer {
+  background: #222222;
+  color: #ededed;
+  padding: 40px 0;
+}
+
+.img-retina .normal {
+  display: auto;
+}
+.img-retina .retina {
+  display: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .img-retina .normal {
+    display: none;
+  }
+  .img-retina .retina {
+    display: inline-block;
+  }
+}
+
+

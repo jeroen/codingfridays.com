@@ -9,9 +9,9 @@
 
 		<title>Evento</title>
 
-		<script src="http://localhost:35729/livereload.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
 		<link href="css/style.min.css" rel="stylesheet">
-
+		<script src="http://localhost:35729/livereload.js"></script>
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
 		<script src="js/respond.min.js"></script>
@@ -23,20 +23,27 @@
 		<header id="header">
 
 			<div class="container">
-
-				<nav>
+				<nav class="visible-xs">
 					<ul>
 						<li><a href="#">Ponentes</a></li>
 						<li><a href="#">Proyectos</a></li>
-						<li><a href="#">Dónde y cuándo</a></li>
+						<li><a href="#">Dónde</a></li>
 						<li><a href="#">Participar</a></li>
 					</ul>
 				</nav>
-
-				LOGO
-				<h1>Título del evento</h1>
-				<h2>Encuentro de desarrolladores y diseñadores web</h2>
-
+				<div class="row">
+					<div class="col-md-3 visible-md visible-lg"><p class="izquierda text-right">Próximo: 21 de noviembre de 2013</p></div>
+					<div class="col-md-6">
+						<div id="logo" class="img-retina"><img src="img/logo.png" class="normal"><img src="img/logo@2x.png" class="retina"></div>
+					</div>
+					<div class="col-md-3 visible-md visible-lg"><p class="derecha text-left">Hospedado (físicamente) por CDmon</p></div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8">
+						<h1>Título del evento</h1>
+						<h2>Reunión mensual de desarrolladores y diseñadores web con ganas de compartir conocimientos y estar al día con las últimas tecnologías, técnicas y metodologías.</h2>
+					</div>
+				</div>
 			</div>
 
 		</header>
@@ -112,7 +119,7 @@
 				</a>
 
 				<meta itemprop="startDate" content="2016-04-21T20:00">
-				Divendres 21 d'octubre a les 18:00
+				Viernes 21 de octubre a las 18:00
 
 				<div itemprop="location" itemscope itemtype="http://schema.org/Place">
 					<a itemprop="url" href="http://www.cdmon.com"><span itemprop="name">CDmon</span></a>
@@ -124,12 +131,28 @@
 
 			</div>
 		</section>
+
+		<section id="participar">
+			<div class="container">
+
+				Derp. Cómo participar.
+
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="container">
+
+				Footer
+
+			</div>
+		</footer>
 	
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.min.js"></script>
 	</body>
 </html>

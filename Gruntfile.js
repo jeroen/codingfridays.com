@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		},
 		concat: {
 			js: {
-				src: ['js/source/bootstrap.js', 'js/source/scripts.js'],
+				src: ['js/source/jquery.js', 'js/source/bootstrap.js', 'js/source/plugins.js', 'js/source/scripts.js'],
 				dest: 'js/scripts.js'
 			},
 			css: {
@@ -26,16 +26,6 @@ module.exports = function(grunt) {
 				dest: 'css/style.css'
 			}
 		},
-		/*connect: {
-			server: {
-				options: {
-					port: 9001,
-					base: '',
-					livereload: true,
-					keepalive: true
-				}
-			}
-		},*/
 		imagemin: {
 			production: {
 				options: {
@@ -80,7 +70,7 @@ module.exports = function(grunt) {
 				options: {
 					context: {
 						ENV: 'production',
-						RELEASE_TIME: Math.round(Date.now() / 1000)
+						RELEASE_TIME: Math.round(Date.now() / 1000) // El hast para usar como cachebuster en los archivos CSS y JS.
 					}
 				},
 				src: 'templates/index.html',
@@ -103,26 +93,29 @@ module.exports = function(grunt) {
 			options: {
 				livereload: true,
 			},
+			all: {
+				files: ['less/*.less', 'templates/*.html'],
+				tasks: ['less', 'concat', 'cssmin:dev', 'preprocess:dev'],
+			},
 			less: {
 				files: ['less/*.less'],
-				tasks: ['less', 'concat', 'cssmin'],
+				tasks: ['less', 'concat', 'cssmin:dev'],
 			},
 		},
 	});
+
 
 	grunt.loadNpmTasks('assemble-less');
 	grunt.loadNpmTasks('grunt-css');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	//grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-preprocess');
 
-
-	grunt.registerTask('default', ['less', 'concat', 'cssmin:dev', 'jshint:dev', 'uglify:dev', 'preprocess:dev', 'watch']);
-	grunt.registerTask('summon', ['clean:build', 'less', 'concat', 'cssmin:production', 'uglify:production', 'preprocess:production']);
+	grunt.registerTask('default', ['less', 'concat', 'cssmin:dev', 'jshint:dev', 'uglify:dev', 'preprocess:dev', 'watch:all']);
+	grunt.registerTask('summon', ['clean:build', 'less', 'concat', 'cssmin:production', 'uglify:production', 'preprocess:production', 'imagemin:production']);
 
 };
