@@ -2,6 +2,9 @@
 @import "mixins.less";
 @import "variables.less";
 
+a {
+	color: @azul; // TODO: ajustar
+}
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.3em;
@@ -68,25 +71,59 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 
+#y {
+	text-align: center;
+	div {
+		background: #43daff;
+		color: #ffffff;
+		margin-top: 50px;
+		display: inline-block;
+		padding: 10px;
+		line-height: 1em;
+		height: 70px;
+		width: 70px;
+		font-size: 48px;
+		font-family: Georgia;
+		.rounded(50%);
+	}
+}
+
 #ponentes {
 	padding: 50px 0;
 	background: #f3f3f3;
 	border-bottom: 1px solid #ededed;
 	.ponente {
-		padding-left: 180px;
+		&.izquierda {
+			text-align: right;
+			padding-right: 180px;
+			margin-right: -30px;
+			.foto {
+				margin-right: -180px;
+				float: right;
+			}
+		}
+		&.derecha {
+			padding-left: 180px;
+			margin-left: -30px;
+			.foto {
+				margin-left: -180px;
+				float: left;
+			}
+		}
 	}
 	.foto {
-		margin-left: -180px;
-		float: left;
 		.rounded(5px);
 	}
 	h2 {
+		font-family: 'Pathway Gothic One', sans-serif;
 		font-size: 28px;
 	}
 	.descripcion {
 		font-size: 16px;
+		margin-bottom: 20px;
 	}
 	.nombre {
+		font-family: 'Pathway Gothic One', sans-serif;
 		font-size: 21px;
 		font-weight: bold;
 	}

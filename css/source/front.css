@@ -25,6 +25,9 @@
     display: inline-block;
   }
 }
+a {
+  color: #43daff;
+}
 h1,
 h2,
 h3,
@@ -103,28 +106,61 @@ h6,
   margin-bottom: 20px;
   max-width: 100%;
 }
+#y {
+  text-align: center;
+}
+#y div {
+  background: #43daff;
+  color: #ffffff;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 10px;
+  line-height: 1em;
+  height: 70px;
+  width: 70px;
+  font-size: 48px;
+  font-family: Georgia;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
 #ponentes {
   padding: 50px 0;
   background: #f3f3f3;
   border-bottom: 1px solid #ededed;
 }
-#ponentes .ponente {
-  padding-left: 180px;
+#ponentes .ponente.izquierda {
+  text-align: right;
+  padding-right: 180px;
+  margin-right: -30px;
 }
-#ponentes .foto {
+#ponentes .ponente.izquierda .foto {
+  margin-right: -180px;
+  float: right;
+}
+#ponentes .ponente.derecha {
+  padding-left: 180px;
+  margin-left: -30px;
+}
+#ponentes .ponente.derecha .foto {
   margin-left: -180px;
   float: left;
+}
+#ponentes .foto {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 #ponentes h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
   font-size: 28px;
 }
 #ponentes .descripcion {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 #ponentes .nombre {
+  font-family: 'Pathway Gothic One', sans-serif;
   font-size: 21px;
   font-weight: bold;
 }
