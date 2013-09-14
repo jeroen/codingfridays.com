@@ -3,17 +3,43 @@
 @import "variables.less";
 
 a {
-	color: @azul; // TODO: ajustar
+	color: @fc-link; // TODO: ajustar
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.3em;
 }
 
+
+.first-title {
+	margin-top: 0;
+}
+
+.ninja { display: none; }
+.nowrap { white-space: nowrap; }
+
+.section-header {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #888888;
+	&:after,
+	&:before {
+		font-family: Arial;
+		content: "\2022";
+		margin: 0 10px;
+		color: #dddddd;
+	}
+}
+
 #header {
 	background: #222222 url('../img/header_bg.png');
 	background-size: cover;
-	border-top: 3px solid #43daff;
+	border-top: 3px solid @azul;
 	text-align: center;
 	padding: 50px 0;
 	ul {
@@ -74,7 +100,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 #y {
 	text-align: center;
 	div {
-		background: #43daff;
+		background: @azul;
 		color: #ffffff;
 		margin-top: 50px;
 		display: inline-block;
@@ -132,13 +158,41 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 #proyectos {
 	padding: 50px 0;
+	h2 {
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 28px;
+	}
+	.logo {
+		width: 200px;
+		height: auto;
+	}
 }
 
 
 #lugar {
 	padding: 50px 0;
-	background: #f3f3f3;
-	border-top: 1px solid #ededed;
+	font-size: 18px;
+	//background: #f3f3f3;
+	background: @azul;
+	color: #11829d;
+	//border-top: 1px solid #ededed;
+	a {
+		color: #00667f;
+		font-weight: bold;
+	}
+	.section-header {
+		color: #ffffff;
+		&:after,
+		&:before {
+			color: #8fe5fb;
+		}
+	}
+	.fecha {
+		font-family: 'Pathway Gothic One', sans-serif;
+		text-transform: uppercase;
+		font-size: 48px;
+		line-height: 1em;
+	}
 }
 
 #participar {

@@ -6831,7 +6831,7 @@ td.visible-print {
   }
 }
 a {
-  color: #43daff;
+  color: #36b2d1;
 }
 h1,
 h2,
@@ -6846,6 +6846,32 @@ h6,
 .h5,
 .h6 {
   line-height: 1.3em;
+}
+.first-title {
+  margin-top: 0;
+}
+.ninja {
+  display: none;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.section-header {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #888888;
+}
+.section-header:after,
+.section-header:before {
+  font-family: Arial;
+  content: "\2022";
+  margin: 0 10px;
+  color: #dddddd;
 }
 #header {
   background: #222222 url('../img/header_bg.png');
@@ -6972,10 +6998,36 @@ h6,
 #proyectos {
   padding: 50px 0;
 }
+#proyectos h2 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 28px;
+}
+#proyectos .logo {
+  width: 200px;
+  height: auto;
+}
 #lugar {
   padding: 50px 0;
-  background: #f3f3f3;
-  border-top: 1px solid #ededed;
+  font-size: 18px;
+  background: #43daff;
+  color: #11829d;
+}
+#lugar a {
+  color: #00667f;
+  font-weight: bold;
+}
+#lugar .section-header {
+  color: #ffffff;
+}
+#lugar .section-header:after,
+#lugar .section-header:before {
+  color: #8fe5fb;
+}
+#lugar .fecha {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 1em;
 }
 #participar {
   background: #444444;
