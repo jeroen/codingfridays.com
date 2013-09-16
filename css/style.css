@@ -6830,6 +6830,9 @@ td.visible-print {
     display: inline-block;
   }
 }
+p {
+  line-height: 1.5em;
+}
 a {
   color: #36b2d1;
 }
@@ -6846,6 +6849,13 @@ h6,
 .h5,
 .h6 {
   line-height: 1.3em;
+}
+ul {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+li {
+  margin-bottom: 10px;
 }
 .first-title {
   margin-top: 0;
@@ -6993,7 +7003,6 @@ h6,
 #ponentes .nombre {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 21px;
-  font-weight: bold;
 }
 #proyectos {
   padding: 50px 0;
@@ -7031,8 +7040,22 @@ h6,
 }
 #participar {
   background: #444444;
-  color: #ededed;
+  color: #dedede;
   padding: 40px 0;
+}
+#participar a {
+  color: #fcd6b0;
+}
+#participar h4 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 24px;
+}
+#participar .section-header {
+  color: #ffffff;
+}
+#participar .section-header:after,
+#participar .section-header:before {
+  color: #777777;
 }
 #footer {
   background: #222222;

@@ -2,12 +2,24 @@
 @import "mixins.less";
 @import "variables.less";
 
+p {
+	line-height: 1.5em;
+}
+
 a {
 	color: @fc-link; // TODO: ajustar
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.3em;
+}
+
+ul {
+	margin: 20px 0;
+	padding-left: 30px;
+}
+li {
+	margin-bottom: 10px;
 }
 
 
@@ -151,7 +163,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.nombre {
 		font-family: 'Pathway Gothic One', sans-serif;
 		font-size: 21px;
-		font-weight: bold;
 	}
 }
 
@@ -197,8 +208,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 #participar {
 	background: #444444;
-	color: #ededed;
+	color: #dedede;
 	padding: 40px 0;
+	a {
+		color: #fcd6b0;
+	}
+	h4 {
+		font-family: 'Pathway Gothic One', sans-serif;
+		font-size: 24px;
+	}
+	.section-header {
+		color: #ffffff;
+		&:after,
+		&:before {
+			color: #777777;
+		}
+	}
 }
 
 #footer {

@@ -10,7 +10,7 @@
 		<title>Evento</title>
 
 		<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-		<link href="css/style.min.css?1378835076" rel="stylesheet">
+		<link href="css/style.min.css?1379355873" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
 		<script src="js/respond.min.js"></script>
@@ -50,26 +50,31 @@
 
 		<section id="ponentes">
 
+			<h1 class="section-header">Charlas</h1>
+
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-5">
 
-						<div class="ponente" itemscope itemtype="http://schema.org/Person">
+						<div class="ponente izquierda" itemscope itemtype="http://schema.org/Person">
 							<img class="foto" src="img/ponentes/heisenberg.png" itemprop="image" />
-							<h2>Preprocesadores CSS: LESS y SASS</h2>
-							<p class="descripcion">Descripción de qué tratará la charla, su contenido y finalidad.</p>
+							<h2 class="first-title">Preprocesadores CSS: LESS y SASS</h2>
+							<p class="descripcion">Descripción de qué tratará la charla, su contenido y finalidad. Las cosas que se harán, las que se verán, el nivel previo requerido, cosas así.</p>
 							<span class="nombre" itemprop="name">Walter White</span><br>
 							<span itemprop="jobTitle">Profesor de Química</span> en <span itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://company.com"><span itemprop="name">Grey Matter Inc.</span></a></span><br>
 							<a href="http://www.twitter.com/heisenberg" itemprop="url">@heisenberg</a>
 						</div>
 
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-2">
+						<div id="y"><div>&</div></div>
+					</div>
+					<div class="col-md-5">
 
-						<div class="ponente" itemscope itemtype="http://schema.org/Person">
+						<div class="ponente derecha" itemscope itemtype="http://schema.org/Person">
 							<img class="foto" src="img/ponentes/saul.png" itemprop="image" />
-							<h2>Introducción a Node.js</h2>
-							<p class="descripcion">Otra descripción, de la segunda charla. Herpy derp, it's better call Saul.</p>
+							<h2 class="first-title">Introducción a Node.js</h2>
+							<p class="descripcion">Otra descripción, de la segunda charla. Herpy derp, it's better call Saul. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In itaque minima assumenda dolor aut impedit!</p>
 							<span class="nombre" itemprop="name">Saul Goodman</span><br>
 							<span itemprop="jobTitle">Abogado</span> en <span itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://company.com"><span itemprop="name">Stark Industries</span></a></span><br>
 							<a href="http://www.twitter.com/saul_goodman" itemprop="url">@saul_goodman</a>
@@ -83,24 +88,18 @@
 
 		<section id="proyectos">
 
+			<h1 class="section-header">Proyecto</h1>
+
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-			
-						<div itemscope itemtype="http://schema.org/Product">
-							<img src="img.jpg" itemprop="logo"><br>
-							<h2 itemprop="name">Nombre del servicio</h2>
-							<span itemprop="description">Descripción del servicio o producto del que se hablará.</span><br>
-							<span itemprop="brand" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://company2.com"><span itemprop="name">Derp Labs</span></a></span>
-						</div>
-
+					<div class="col-lg-3 col-lg-offset-2 col-md-4 col-md-offset-1 text-right">
+						<img class="logo" src="img/servicios/bower.png" itemprop="logo"><br>
 					</div>
-					<div class="col-md-6">
-			
+					<div class="col-lg-4 col-md-5">
+
 						<div itemscope itemtype="http://schema.org/Product">
-							<img src="img.jpg" itemprop="logo"><br>
-							<h2 itemprop="name">Nombre del servicio</h2>
-							<span itemprop="description">Descripción del servicio o producto del que se hablará.</span><br>
+							<h2 class="first-title" itemprop="name">Nombre del servicio</h2>
+							<p itemprop="description">Descripción del servicio o producto del que se hablará. Para qué sirve, los problemas con los que se han encontrado durante el desarrollo y cómo los han solucionado, aparte de las tecnologías usadas.</p>
 							<span itemprop="brand" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://company2.com"><span itemprop="name">Derp Labs</span></a></span>
 						</div>
 
@@ -111,25 +110,35 @@
 		</section>
 
 		<section id="lugar">
+
+			<h1 class="section-header">Dónde se realiza</h1>
+
 			<div class="container" itemscope itemtype="http://schema.org/Event">
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2 col-md-6 text-right">
 
-				<a itemprop="url" href="http://urldelevento.com">
-					<span itemprop="name">Nombre del evento</span>
-				</a>
+						<a class="ninja" itemprop="url" href="http://urldelevento.com"><span itemprop="name">Nombre chachi</span></a>
+						<p class="fecha"><meta itemprop="startDate" content="2016-04-21T20:00">Viernes 21 de octubre<br>a las 18:00</p>
 
-				<meta itemprop="startDate" content="2016-04-21T20:00">
-				Viernes 21 de octubre a las 18:00
+					</div>
+					<div class="col-lg-4 col-md-6" itemprop="location" itemscope itemtype="http://schema.org/Place">
 
-				<div itemprop="location" itemscope itemtype="http://schema.org/Place">
-					<a itemprop="url" href="http://www.cdmon.com"><span itemprop="name">CDmon</span></a>
-					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-						<span itemprop="addressLocality">Malgrat de Mar</span>,
-						<span itemprop="addressRegion">Barcelona</span>
+						<p>
+							En las oficinas de <a itemprop="url" href="http://www.cdmon.com"><span itemprop="name">CDmon</span></a>
+						</p>
+						<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							C/ Girona, 81-83, Local 6<br>
+							<span class="nowrap" itemprop="addressLocality">Malgrat de Mar</span>,
+							<span itemprop="addressRegion">Barcelona</span>
+						</p>
+
 					</div>
 				</div>
 
 			</div>
 		</section>
+
+		<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?ie=UTF8&amp;ll=41.649395,2.746711&amp;spn=0.012987,0.023754&amp;t=m&amp;z=16&amp;output=embed"></iframe>
 
 		<section id="participar">
 			<div class="container">
@@ -146,7 +155,7 @@
 
 			</div>
 		</footer>
-	
+
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->
