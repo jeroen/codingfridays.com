@@ -44,6 +44,7 @@ h6,
 .h5,
 .h6 {
   line-height: 1.3em;
+  font-weight: normal;
 }
 ul {
   margin: 20px 0;
@@ -162,8 +163,8 @@ li {
 }
 #ponentes {
   padding: 50px 0;
-  background: #f3f3f3;
-  border-bottom: 1px solid #ededed;
+  background: #eeeeee;
+  border-bottom: 1px solid #e1e1e1;
 }
 #ponentes .ponente.izquierda {
   text-align: right;
@@ -234,16 +235,32 @@ li {
   line-height: 1em;
 }
 #participar {
-  background: #444444;
-  color: #dedede;
-  padding: 40px 0;
+  background: #222222;
+  color: #bbbbbb;
+  padding: 50px 0;
+  text-align: center;
+}
+#participar .icono {
+  width: 100px;
+  height: auto;
 }
 #participar a {
-  color: #fcd6b0;
+  color: #43daff;
+}
+#participar p,
+#participar li {
+  text-align: left;
+}
+#participar .columna {
+  padding: 0 30px;
+  margin-bottom: 30px;
 }
 #participar h4 {
   font-family: 'Pathway Gothic One', sans-serif;
+  color: #ffffff;
   font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #participar .section-header {
   color: #ffffff;
@@ -253,7 +270,7 @@ li {
   color: #777777;
 }
 #footer {
-  background: #222222;
+  background: #333333;
   color: #ededed;
   padding: 40px 0;
 }
