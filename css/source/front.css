@@ -241,8 +241,9 @@ li {
   text-align: center;
 }
 #participar .icono {
-  width: 100px;
+  width: 50px;
   height: auto;
+  margin: 10px 0;
 }
 #participar a {
   color: #43daff;
@@ -252,7 +253,7 @@ li {
   text-align: left;
 }
 #participar .columna {
-  padding: 0 30px;
+  padding: 0 40px;
   margin-bottom: 30px;
 }
 #participar h4 {
