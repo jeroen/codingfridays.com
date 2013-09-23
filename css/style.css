@@ -7078,7 +7078,17 @@ li {
 #footer {
   background: #333333;
   color: #ededed;
-  padding: 40px 0;
+  padding: 40px 0 70px;
+}
+#newsletter .correo {
+  border: 0;
+  background: #222222;
+  color: #ededed;
+}
+#newsletter .btn {
+  background: #36b2d1;
+  color: #ffffff;
+  text-shadow: 0 1px 2px #103a45;
 }
 
 .img-retina .normal {
