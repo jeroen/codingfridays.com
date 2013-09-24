@@ -2268,10 +2268,11 @@ function initialize() {
 
 	var myLatlng = new google.maps.LatLng(41.650625, 2.746188);
 	var myOptions = {
-  		zoom: 16,
+		zoom: 16,
 		center: myLatlng,
-  		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		scrollwheel: false}
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		scrollwheel: false
+	};
 	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
 	var markerOptions = {

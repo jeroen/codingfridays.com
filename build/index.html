@@ -10,7 +10,7 @@
 		<title>Evento</title>
 
 		<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-		<link href="css/style.min.css?1379947019" rel="stylesheet">
+		<link href="css/style.min.css?1380050468" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
 		<script src="js/respond.min.js"></script>
@@ -22,13 +22,8 @@
 		<header id="header">
 
 			<div class="container">
-				<nav class="visible-xs">
-					<ul>
-						<li><a href="#">Ponentes</a></li>
-						<li><a href="#">Proyectos</a></li>
-						<li><a href="#">Dónde</a></li>
-						<li><a href="#">Participar</a></li>
-					</ul>
+				<nav class="visible-xs" id="menu">
+					<ul><li><a href="#">Ponentes</a></li><li><a href="#">Proyectos</a></li><li><a href="#">Dónde</a></li><li><a href="#">Participar</a></li></ul>
 				</nav>
 				<div class="row">
 					<div class="col-md-3 visible-md visible-lg"><p class="izquierda text-right">Próximo: 21 de noviembre de 2013</p></div>
@@ -40,6 +35,10 @@
 				<div class="row">
 					<div class="col-md-offset-2 col-md-8">
 						<h1>Título del evento</h1>
+						<div class="visible-xs visible-sm sub-header">
+							Próximo: 21 de noviembre de 2013<br>
+							Hospedado (físicamente) por CDmon
+						</div>
 						<h2>Reunión mensual de desarrolladores y diseñadores web con ganas de compartir conocimientos y estar al día con las últimas tecnologías, técnicas y metodologías.</h2>
 					</div>
 				</div>
@@ -67,7 +66,7 @@
 
 					</div>
 					<div class="col-md-2">
-						<div id="y"><div>&</div></div>
+						<div id="y" class="visible-md visible-lg"><div>&</div></div>
 					</div>
 					<div class="col-md-5">
 
@@ -86,18 +85,16 @@
 
 		</section>
 
-		<section id="proyectos">
+		<section id="proyecto">
 
 			<h1 class="section-header">Proyecto</h1>
 
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-lg-offset-2 col-md-4 col-md-offset-1 text-right">
-						<img class="logo" src="img/servicios/bower.png" itemprop="logo"><br>
-					</div>
-					<div class="col-lg-4 col-md-5">
+					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
 
-						<div itemscope itemtype="http://schema.org/Product">
+						<div itemscope itemtype="http://schema.org/Product" class="proyecto">
+							<img class="logo" src="img/servicios/bower.png" itemprop="logo">
 							<h2 class="first-title" itemprop="name">Bower, a package management</h2>
 							<p itemprop="description">Descripción del servicio o producto del que se hablará. Para qué sirve, los problemas con los que se han encontrado durante el desarrollo y cómo los han solucionado, aparte de las tecnologías usadas.</p>
 							<span itemprop="brand" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="http://company2.com"><span itemprop="name">Derp Labs</span></a></span>
@@ -115,7 +112,7 @@
 
 			<div class="container" itemscope itemtype="http://schema.org/Event">
 				<div class="row">
-					<div class="col-lg-4 col-lg-offset-2 col-md-6 text-right">
+					<div class="col-lg-4 col-lg-offset-2 col-md-6">
 
 						<a class="ninja" itemprop="url" href="http://urldelevento.com"><span itemprop="name">Nombre chachi</span></a>
 						<p class="fecha"><meta itemprop="startDate" content="2016-04-21T20:00">Viernes 21 de octubre<br>a las 18:00</p>

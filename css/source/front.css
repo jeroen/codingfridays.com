@@ -92,10 +92,6 @@ li {
   padding: 0;
   display: inline-block;
 }
-#header li {
-  float: left;
-  margin: 0 10px;
-}
 #header h1 {
   display: none;
 }
@@ -105,7 +101,8 @@ li {
   font-weight: normal;
 }
 #header .izquierda,
-#header .derecha {
+#header .derecha,
+#header .sub-header {
   font-family: 'Pathway Gothic One', sans-serif;
   color: #888888;
   letter-spacing: 2px;
@@ -140,8 +137,38 @@ li {
 #logo img {
   width: 400px;
   height: auto;
-  margin-bottom: 20px;
   max-width: 100%;
+}
+@media (min-width: 992px) {
+  #logo img {
+    margin-bottom: 20px;
+  }
+}
+#menu {
+  font-family: 'Pathway Gothic One', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  margin-top: -30px;
+}
+#menu ul {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+}
+#menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#menu a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 0;
+  margin: 15px 0;
 }
 #y {
   text-align: center;
@@ -149,7 +176,7 @@ li {
 #y div {
   background: #43daff;
   color: #ffffff;
-  margin-top: 50px;
+  margin-top: 45px;
   display: inline-block;
   padding: 10px;
   line-height: 1em;
@@ -166,24 +193,48 @@ li {
   background: #eeeeee;
   border-bottom: 1px solid #e1e1e1;
 }
+#ponentes .ponente.derecha,
 #ponentes .ponente.izquierda {
-  text-align: right;
-  padding-right: 180px;
-  margin-right: -30px;
+  padding-left: 120px;
+  margin-bottom: 40px;
 }
+#ponentes .ponente.derecha .foto,
 #ponentes .ponente.izquierda .foto {
-  margin-right: -180px;
-  float: right;
-}
-#ponentes .ponente.derecha {
-  padding-left: 180px;
-  margin-left: -30px;
-}
-#ponentes .ponente.derecha .foto {
-  margin-left: -180px;
+  margin-left: -120px;
   float: left;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  #ponentes .ponente.derecha,
+  #ponentes .ponente.izquierda {
+    padding-left: 180px;
+    margin-bottom: 40px;
+  }
+  #ponentes .ponente.derecha .foto,
+  #ponentes .ponente.izquierda .foto {
+    margin-left: -180px;
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  #ponentes .ponente.derecha {
+    margin-left: -30px;
+  }
+  #ponentes .ponente.izquierda {
+    text-align: right;
+    padding-right: 180px;
+    margin-right: -30px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #ponentes .ponente.izquierda .foto {
+    margin-right: -180px;
+    margin-left: 0;
+    float: right;
+  }
 }
 #ponentes .foto {
+  margin-top: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -200,16 +251,40 @@ li {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 21px;
 }
-#proyectos {
+#proyecto {
   padding: 50px 0;
 }
-#proyectos h2 {
+#proyecto .proyecto {
+  padding-left: 120px;
+  margin-bottom: 40px;
+}
+#proyecto .proyecto h2 {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 28px;
 }
-#proyectos .logo {
-  width: 200px;
+#proyecto .proyecto .logo {
+  width: 100px;
   height: auto;
+  float: left;
+  margin-left: -120px;
+}
+@media (min-width: 768px) {
+  #proyecto .proyecto {
+    padding-left: 180px;
+  }
+  #proyecto .proyecto .logo {
+    margin-left: -180px;
+    width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  #proyecto .proyecto {
+    padding-left: 230px;
+  }
+  #proyecto .proyecto .logo {
+    margin-left: -230px;
+    width: 200px;
+  }
 }
 #lugar {
   padding: 50px 0;
@@ -233,6 +308,17 @@ li {
   text-transform: uppercase;
   font-size: 48px;
   line-height: 1em;
+  text-align: right;
+}
+@media (max-width: 992px) {
+  #lugar {
+    text-align: center;
+  }
+  #lugar .fecha {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
 }
 #participar {
   background: #222222;
@@ -253,8 +339,13 @@ li {
   text-align: left;
 }
 #participar .columna {
-  padding: 0 40px;
   margin-bottom: 30px;
+  padding: 0 30px;
+}
+@media (min-width: 1200px) {
+  #participar .columna {
+    padding: 0 40px;
+  }
 }
 #participar h4 {
   font-family: 'Pathway Gothic One', sans-serif;
