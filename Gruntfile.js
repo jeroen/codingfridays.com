@@ -60,7 +60,8 @@ module.exports = function(grunt) {
 			dev: {
 				options: {
 					context: {
-						ENV: 'dev'
+						ENV: 'dev',
+						CHARLAS: '0',
 					}
 				},
 				src: 'templates/index.html',
@@ -70,6 +71,7 @@ module.exports = function(grunt) {
 				options: {
 					context: {
 						ENV: 'production',
+						CHARLAS: '0',
 						RELEASE_TIME: Math.round(Date.now() / 1000) // El hast para usar como cachebuster en los archivos CSS y JS.
 					}
 				},

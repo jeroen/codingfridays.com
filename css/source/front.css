@@ -188,6 +188,12 @@ li {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+#proximamente {
+  padding: 50px 30px;
+  font-size: 16px;
+  color: #aaaaaa;
+  text-align: center;
+}
 #ponentes {
   padding: 50px 0;
   background: #eeeeee;
@@ -366,6 +372,49 @@ li {
   color: #ededed;
   padding: 40px 0 70px;
 }
+#footer h4 {
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #888888;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#social {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  overflow: hidden;
+}
+#social li {
+  float: left;
+  padding: 0;
+  margin: 0 10px 10px 0;
+}
+#social img {
+  width: 32px;
+  height: 32px;
+}
+#techs {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  overflow: hidden;
+}
+#techs li {
+  float: left;
+  padding: 0;
+  margin: 0 10px 10px 0;
+}
+#techs a {
+  display: block;
+  padding: 10px;
+  line-height: 1em;
+  background: #584c35;
+  color: #b69d6d;
+}
+#techs a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
 #newsletter .correo {
   border: 0;
   background: #222222;
@@ -391,5 +440,4 @@ li {
     display: inline-block;
   }
 }
-
 
